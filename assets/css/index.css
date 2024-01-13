@@ -1,0 +1,71 @@
+:root {
+    --comp: 100vw / 500;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0 calc(var(--comp) * 10);
+}
+
+/* ストップウォッチ */
+.stopwatch {
+	position: relative;
+	background: url(../img/stopwatch.png) no-repeat left top/contain;
+	width: min(calc(var(--comp) * 480), 480px);
+	height: min(calc(var(--comp) * 480), 480px);
+}
+
+/* カウント表示部 */
+.stopwatch__count {
+	position: absolute;
+	top: 48%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: min(calc(var(--comp) * 60), 60px);
+	line-height: 1;
+}
+
+.stopwatch__ms {
+	padding-left: min(calc(var(--comp) * 5), 5px);;
+	font-size: min(calc(var(--comp) * 40), 40px);
+}
+
+/* スタートボタン */
+.stopwatch__start {
+	width: min(calc(var(--comp) * 100), 100px);
+	height: min(calc(var(--comp) * 100), 100px);
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/* リセットボタン */
+.stopwatch__reset {
+	width: min(calc(var(--comp) * 100), 100px);
+	height: min(calc(var(--comp) * 100), 100px);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* 日付 */
+.stopwatch__date {
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-size: min(calc(var(--comp) * 16), 16px);
+}
+
+/* 曜日 */
+.stopwatch__day-of-week {
+	padding-left: min(calc(var(--comp) * 5), 5px);
+	/* font-size: min(calc(var(--comp) * 15), 15px); */
+}
