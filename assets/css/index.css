@@ -67,5 +67,4 @@ body {
 /* 曜日 */
 .stopwatch__day-of-week {
 	padding-left: min(calc(var(--comp) * 5), 5px);
-	/* font-size: min(calc(var(--comp) * 15), 15px); */
 }
